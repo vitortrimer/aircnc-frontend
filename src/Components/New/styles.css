@@ -1,0 +1,24 @@
+label#thumbnail {
+  margin-bottom: 20px;
+  border: 1px dashed #ddd;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+}
+
+label#thumbnail.has-thumbnail {
+  border: 0;
+}
+
+label#thumbnail input {
+  display: none;
+}
+
+.select-image-camera {
+  background: rgba(204, 204, 204, 0.9);
+  border-radius: 100px;
+  padding: 10px;
+}
