@@ -43,13 +43,9 @@ export default function New({ history }) {
             type="file"
             onChange={event => setThumbnail(event.target.files[0])}
           />
-          <img
-            src={camera}
-            alt="Select company image"
-            className="select-image-camera"
-          />
+          <img src={camera} alt="Your company here" className="select-image" />
         </label>
-        <label for="company">COMPANY *</label>
+        <label htmlFor="company">COMPANY *</label>
         <input
           id="company"
           name="company"
@@ -57,7 +53,7 @@ export default function New({ history }) {
           value={company}
           onChange={event => setCompany(event.target.value)}
         />
-        <label for="techs">
+        <label htmlFor="techs">
           TECHNOLOGIES * <span>(divided by commas)</span>
         </label>
         <input
@@ -67,7 +63,7 @@ export default function New({ history }) {
           value={techs}
           onChange={event => setTechs(event.target.value)}
         />
-        <label for="price">
+        <label htmlFor="price">
           DAILY PRICE <span>(empty for FREE)</span>
         </label>
         <input
